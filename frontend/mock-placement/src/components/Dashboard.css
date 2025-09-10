@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap");
+:root {
+  --bg-dark: #1a1a2e;
+  --bg-medium: #16213e;
+  --bg-light: #0f3460;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --accent-blue: #00aaff;
+  --accent-green: #28a745;
+  --accent-red: #dc3545;
+  --border-color: #2c3e50;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+  background: var(--bg-medium);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.nav button {
+  background: var(--bg-light);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav button:hover {
+  background: var(--accent-blue);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 170, 255, 0.4);
+}
+
+.btnLogout {
+  background: var(--accent-red);
+}
+
+.btnLogout:hover {
+  background: #a71d2a;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+.dashboardHeader {
+  background: var(--bg-medium);
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 6px 16px var(--shadow-color);
+}
+
+.dashboardHeader h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  color: var(--accent-blue);
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.5);
+}
+
+.userInfoHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userAvatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--text-primary);
+}
+
+.mainContent {
+  flex: 1;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 2rem auto;
+}
+
+.cardCustom {
+  background: var(--bg-medium);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.cardCustom h2 {
+  color: var(--accent-blue);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.listGroup {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listGroup li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.listGroup li:last-child {
+  border-bottom: none;
+}
+
+.listGroup strong {
+  color: var(--accent-blue);
+}
+
+.mockTestCard {
+  text-align: center;
+}
+
+.lead {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.btnStartTest {
+  background: var(--accent-green);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btnStartTest:hover {
+  background: #218838;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+}
+
+.footer {
+  background: var(--bg-medium);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -4px 8px var(--shadow-color);
+  border-radius: 8px 8px 0 0;
+}

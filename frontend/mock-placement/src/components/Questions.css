@@ -1,0 +1,88 @@
+body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+  padding: 1.5rem;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  background: #16213e;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.sidebar h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #0f3460;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.sidebar button:hover {
+  background: #007bff;
+}
+
+.contentArea {
+  flex: 1;
+  background: #16213e;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.questionSection h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.answerTextarea {
+  width: 100%;
+  min-height: 150px;
+  background: #0a0a1a;
+  color: #d4d4d4;
+  border: 1px solid #0056b3;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+
+.options .form-check {
+  margin-bottom: 0.8rem;
+}
+
+.controls {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+.controls button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.submitBtn {
+  background: #007bff;
+  color: white;
+}
+.nextBtn {
+  background: #28a745;
+  color: white;
+}
